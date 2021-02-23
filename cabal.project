@@ -1,0 +1,4 @@
+packages: ./io-streams-ascii.cabal
+
+package io-streams-ascii
+  ghc-options: -Werror

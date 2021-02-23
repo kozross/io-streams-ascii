@@ -25,21 +25,17 @@ common common-lang
     -Wall -Wcompat -Wincomplete-record-updates
     -Wincomplete-uni-patterns -Wredundant-constraints -Werror
 
-  if flag(dev)
-    ghc-options: -Werror
-
   default-language: Haskell2010
 
 library
   import:          common-lang
-  exposed-modules: System.IO.Streams.Ascii
+  exposed-modules:
+    System.IO.Streams.Ascii
+    System.IO.Streams.Ascii.Exceptional
+
   build-depends:
+    , bytestring  ^>=0.11.0.0
     , io-streams  ^>=1.5.2.0
     , text-ascii  ^>=1.0.0
 
   hs-source-dirs:  src
-
-flag dev
-  description: Always use this during development!
-  manual:      True
-  default:     False
