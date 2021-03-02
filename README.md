@@ -19,8 +19,7 @@ to handle where. We want clarity on this, and do the following to ensure it:
 * If any exceptions of our own are thrown by any function, we specify what they
   are in its documentation.
 
-### Compatibility with the
-[`io-streams`](https://hackage.haskell.org/package/io-streams) API
+### Compatibility with the [`io-streams`](https://hackage.haskell.org/package/io-streams) API
 
 We rely mostly on `io-streams` to do the heavy lifting, providing only wrappers
 to use 'at the edges'. We don't aim to reimplement functionality that can be
